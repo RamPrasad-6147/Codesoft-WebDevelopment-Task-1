@@ -5,12 +5,20 @@
 
 .main{
     width: 100%;
+    height: 100vh;
+}
+.body{
     background: url(IMG_20240607_121043.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: contain;  /* Adjust as needed */
+    background-position: center top;  /* Adjust as needed */
+  }
 }
 
 .navbar{
